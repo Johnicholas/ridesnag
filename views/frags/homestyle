@@ -1,0 +1,39 @@
+<style>
+body {
+  
+    background-image:url('/img/tumblr_mqu5qlslfb1qcqto9o1_r8_1280.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+   
+}
+p
+{
+  
+}
+#searchbutton
+{
+	position:relative;
+	top:9px;
+}
+#research{
+	display: block;
+	margin: 0 auto;
+	width: 35em;
+}
+#move {
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+label.fromto {
+	color: white;
+	font-size: 14pt;
+}
+input.fromto {
+	font-family: 'Vollkorn', serif; 
+	height: 25px;
+	width: 10em;
+	font-size: 14pt;
+}
+
+</style>

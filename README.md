@@ -24,6 +24,16 @@ CREATE TABLE users(???);
 CREATE TABLE locations(???);
 ```
 
+# Running
+
+`node index` runs the server, but! It has to be tended to & restarted with changes.
+
+## Unfinished execution steps
+
+`sudo npm install -g pm2` installs pm2 onto your system: a utility which enables Node to be kept up to date with changes
+
+`grunt watch` ought trigger pm2 reloads.
+
 # PostgreSQL
 
 ## postgresql.conf

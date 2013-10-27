@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
+
 <head>
 	<title>Ridesnag</title>
 	{% block heads %}{% endblock %}
 </head>
 <body>
-
-	</head>
-	<body>
-		<!-- deps -->
-		{% block deps %}{% endblock %}
-		<div class="wrapper">
-		<!-- content -->
-		{% block content %}{% endblock %}
-		<div class="push"></div>
-		</div>
-		<div class="footer">
-			{% block footer %}(c) RideSnag 2013{% endblock %}
-		</div>
-	</body>
-	</style>
 	{% block deps %}{% endblock %}
 
 	<div id="body">
@@ -29,7 +14,7 @@
 	</div>
 
 	<div id="footer">
-		{% block footer %}<!-- (c) RideSnag 2013 -->{% endblock %}
+		{% block footer %} (c) RideSnag 2013 {% endblock %}
 	</div>
 </body>
 </html>

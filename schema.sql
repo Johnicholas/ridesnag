@@ -17,6 +17,13 @@ CREATE TABLE IF NOT EXISTS rating (id serial primary key, rater int, ratee int, 
 -- \c ridedb_test
 CREATE USER rideapp_test WITH PASSWORD 'password5352';
 GRANT ALL PRIVILEGES ON DATABASE ridedb_test TO rideapp_test;
+GRANT ALL PRIVILEGES ON TABLE "user" TO rideapp_test;
+GRANT ALL PRIVILEGES ON TABLE trip TO rideapp_test;
+GRANT ALL PRIVILEGES ON TABLE meet TO rideapp_test;
+GRANT ALL PRIVILEGES ON TABLE rating TO rideapp_test;
+GRANT ALL PRIVILEGES ON TABLE "user" TO rideapp_test;
+
+INSERT INTO "user" (name, pass, username) VALUES ('Matt Fowle', 'mfff', 'mfowle');
 
 -- or
 -- \c ridedb

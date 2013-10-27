@@ -1,22 +1,37 @@
 {% extends "base" %}
 
-{% block content %}
+{% block heads %}
+{% include "frags/homestyle" %}
+{% endblock %}
 
-<form>
-from: <input name="from" />
-to: <input name="to" />
-</from>
+{% block content %}
+<div><img src="/img/Ridesnaglogo.png"></div>
+
+<form action="search" id="research">
+      <label class="fromto" for="to">to</label>
+      <input type="text" name="to" class="fromto" />
+      <label class="fromto" for="from">from</label>
+      <input type="text" name="from" class="fromto" />
+      <input type="image" id="searchbutton" src="/img/search.png" width="30" height="30" />
+</form>
+    
+<p> 
+<form action="offer">
+      <input type="image" src="/img/offerbutt.png" width="1000" height="80" alt="offer" title="offer" />
+</form>
+</p>
 
 <ol>
 {% for trip in trips %}
-<li>
-<div outline="2px">
-<p class="title">{{trip.owner_name}}</p>
-{{trip.from}}
-{{trip.to}}
+<div>
+ <button onclick="myFunction()">
+     {{headshot.img}} {{name}},{{age}} <br>
+     {{likes.img}} {{dislikes}}  <br>
+     {{rateing.img}}
+     </button>
 </div>
-</li>
 {% endfor %}
 </ol>
 
+{% include "frags/leafmap" %}
 {% endblock %}
