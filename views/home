@@ -12,7 +12,6 @@ to: <input name="to" />
 <li>
 <div outline="2px">
 <p class="title">{{trip.owner_name}}</p>
-{{trip.owner}}
 {{trip.from}}
 {{trip.to}}
 </div>
