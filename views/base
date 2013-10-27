@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>A quick app</title>
+		<title>Ridesnag</title>
 
 		<script src="/nunjucks/nunjucks.js"></script>
 		<script src="/templates.js"></script>
@@ -11,9 +11,11 @@
 	<body>
 		<!-- deps -->
 		{% block deps %}{% endblock %}
+		<div class="wrapper">
 		<!-- content -->
 		{% block content %}{% endblock %}
-
+		<div class="push"></div>
+		</div>
 		<div class="footer">
 			{% block footer %}(c) RideSnag 2013{% endblock %}
 		</div>

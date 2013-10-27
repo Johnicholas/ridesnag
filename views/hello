@@ -2,11 +2,11 @@
 
 {% block content %}
 <font color="white">
-	<p id = "heading">Ridesnag <br/></p>
+	<p id="heading">Ridesnag<br/></p>
 	<p id="subheading">Where are we headed?</p>
 	<form method="get" action="home">
 		<input type="text" name="search" style="height:25px;font-size:14pt;"></input>
-		<input id= "button" type="image" src="/img/search.png" name="image" width="30" height="30"></input>
+		<input id="button" type="image" src="/img/search.png" name="image" width="30" height="30"></input>
 	</form>
 </font>
 {% include "frags/leafmap" %}
