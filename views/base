@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ridesnag</title>
-
-		<script src="/nunjucks/nunjucks.js"></script>
-		<script src="/templates.js"></script>
-		{% block heads %}{% endblock %}
+<head>
+<head>
+	<title>Ridesnag</title>
+	{% block heads %}{% endblock %}
+</head>
+<body>
 
 	</head>
 	<body>
@@ -20,4 +20,16 @@
 			{% block footer %}(c) RideSnag 2013{% endblock %}
 		</div>
 	</body>
+	</style>
+	{% block deps %}{% endblock %}
+
+	<div id="body">
+		{% block content %}{% endblock %}
+		<div style="clear:both;"/>
+	</div>
+
+	<div id="footer">
+		{% block footer %}<!-- (c) RideSnag 2013 -->{% endblock %}
+	</div>
+</body>
 </html>

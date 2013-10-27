@@ -45,4 +45,3 @@ margin: 0 auto -142px; /* the bottom margin is the negative value of the footer'
 height: 142px; /* .push must be the same height as .footer */
 }
 </style>
-
