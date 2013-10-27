@@ -7,15 +7,17 @@ from: <input name="from" />
 to: <input name="to" />
 </from>
 
+<ol>
 {% for trip in trips %}
-
+<li>
 <div outline="2px">
 <p class="title">{{trip.owner_name}}</p>
 {{trip.owner}}
 {{trip.from}}
 {{trip.to}}
 </div>
-
+</li>
 {% endfor %}
+</ol>
 
 {% endblock %}
