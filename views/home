@@ -12,8 +12,8 @@ to: <input name="to" />
 <div outline="2px">
 <p class="title">{{trip.owner_name}}</p>
 {{trip.owner}}
-{{trip.start}}
-{{trip.end}}
+{{trip.from}}
+{{trip.to}}
 </div>
 
 {% endfor %}

@@ -130,14 +130,14 @@ app.get('/hello', function(req, res) {
 })
 
 app.get('/home', function(req, res) {
-    res.locals.user= 'matt'
-    res.locals.username= 'mfowle'
-    res.locals.trips= {}
-    res.locals.trips= { owner: 'Jordan', from: 'Boston', to: 'Portland' }
-    res.locals.trips= { owner: 'Matt', from: 'Detroit', to: 'Portland' }
-    res.locals.trips= { owner: 'Sansa', from: 'Washington', to: 'Portland' }
-    res.locals.trips= { owner: 'Theon', from: 'Honolulu', to: 'Portland' }
-    res.render('home')
+	res.locals.user= 'matt'
+	res.locals.username= 'mfowle'
+	res.locals.trips= []
+	res.locals.trips.push({ owner: 'Jordan', from: 'Boston', to: 'Portland' })
+	res.locals.trips.push({ owner: 'Matt', from: 'Detroit', to: 'Portland' })
+	res.locals.trips.push({ owner: 'Sansa', from: 'Washington', to: 'Portland' })
+	res.locals.trips.push({ owner: 'Theon', from: 'Honolulu', to: 'Falmouth' })
+	res.render('home')
 })
 
 app.get('/', function(req, res){
