@@ -124,10 +124,10 @@ var Meet = orm.Model.extend({
 // endpoints
 //
 
-app.get('/hello', function(req, res) {
+function BE_AWESOME(req, res){
 	res.locals.user= "matt"
 	res.render('hello', { username: 'mfowle' })
-})
+}
 
 app.get('/home', function(req, res) {
 	res.locals.user= 'matt'
