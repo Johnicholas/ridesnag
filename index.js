@@ -140,9 +140,8 @@ app.get('/home', function(req, res) {
 	res.render('home')
 })
 
-app.get('/', function(req, res){
-	res.render('index', { user: req.user }) // TODO: have passport seed this information
-})
+app.get('/hello', BE_AWESOME)
+app.get('/', BE_AWESOME)
 
 app.get('/account', function(req, res){
 	res.render('account', { user: req.user })
